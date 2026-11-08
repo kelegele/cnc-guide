@@ -63,6 +63,7 @@ nav:
       - B 邮件模板库: lessons/appendix-b.md
       - C 图纸符号速查: lessons/appendix-c.md
       - D 检查清单集: lessons/appendix-d.md
+      - E 常见问题 FAQ: lessons/faq.md
 markdown_extensions:
   - tables
   - admonition

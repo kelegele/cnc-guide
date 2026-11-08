@@ -17,7 +17,7 @@
 | 第五篇 报价与成交 | [第 10 章 成本与报价](lessons/ch10.md)｜[第 11 章 条款与物流](lessons/ch11.md)｜[第 12 章 谈判与下单](lessons/ch12.md) |
 | 第六篇 交付与售后 | [第 13 章 打样与量产](lessons/ch13.md)｜[第 14 章 品质与验收](lessons/ch14.md)｜[第 15 章 售后与复购](lessons/ch15.md) |
 | 外贸英语分册 | [场景 1 询盘与开发信](lessons/en01.md)｜[场景 2 报价与议价](lessons/en02.md)｜[场景 3 订单与跟进](lessons/en03.md)｜[场景 4 客诉](lessons/en04.md)｜[场景 5 付款催款](lessons/en05.md)｜[场景 6 礼貌维护](lessons/en06.md)——每场景＝单词＋句库＋范例＋练习 |
-| 附录 | [A 术语表](lessons/appendix-a.md)｜[B 邮件模板库](lessons/appendix-b.md)｜[C 图纸符号速查](lessons/appendix-c.md)｜[D 检查清单集](lessons/appendix-d.md) |
+| 附录 | [A 术语表](lessons/appendix-a.md)｜[B 邮件模板库](lessons/appendix-b.md)｜[C 图纸符号速查](lessons/appendix-c.md)｜[D 检查清单集](lessons/appendix-d.md)｜[E 常见问题 FAQ](lessons/faq.md) |
 
 每章都有「你将学会」与自测——自测过关才进下一章。
 

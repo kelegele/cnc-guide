@@ -1,0 +1,72 @@
+/* CNC 外贸学习站 · 风格覆盖
+   设计方向：编辑风——净白头部、墨色大标题、柔和提示块、紧凑表格
+   注意：主题变量定义在 [data-md-color-scheme=...] 选择器上（非 :root），
+   覆盖必须用同级选择器，且依赖 extra_css 后加载取胜 */
+
+/* 浅色模式：白头部 + 蓝链接（修复 white 主色把链接推导成白色导致白底隐形的问题） */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #1c2430;
+  --md-typeset-a-color: #0b62d6;
+  --md-accent-fg-color: #0a56c2;
+  --md-default-bg-color: #f7f8fa;
+}
+
+/* 深色模式 */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #10151c;
+  --md-typeset-a-color: #7ab0ff;
+  --md-accent-fg-color: #9cc3ff;
+  --md-default-bg-color: #141a21;
+}
+
+/* 字体：系统中文栈，优先苹方/微软雅黑 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+/* 头部：极简净白，细分割线代替阴影 */
+.md-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+[data-md-color-scheme="slate"] .md-header {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* 标题：大而墨色，二级标题加细线 */
+.md-typeset h1 {
+  font-size: 1.7em;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+}
+.md-typeset h2 {
+  margin-top: 1.6em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 提示块：圆角+微阴影，去刺眼色块 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* 表格：紧凑、行距舒服 */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+}
+
+/* 正文宽度：阅读舒适线 */
+.md-content {
+  max-width: 46rem;
+}
+
+/* 页脚低调 */
+.md-footer {
+  font-size: 0.7rem;
+}

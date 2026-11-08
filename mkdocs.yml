@@ -1,0 +1,70 @@
+site_name: CNC 外贸学习站
+site_description: 面向外贸 SOHO 与新手的 CNC 加工知识教程——报价要素、工艺常识、商业逻辑、询盘英语，成体系学习路径
+docs_dir: docs
+dev_addr: 127.0.0.1:8123
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+extra_css:
+  - stylesheets/custom.css
+nav:
+  - 学习地图: index.md
+  - 绪论 · 三个最常见的坑: lessons/lesson-0.md
+  - 第一篇 · 认识行业:
+      - 第 1 章 认识 CNC 加工: lessons/ch01.md
+      - 第 2 章 外贸服务商的角色: lessons/ch02.md
+  - 第二篇 · 读懂产品:
+      - 第 3 章 材料入门: lessons/ch03.md
+      - 第 4 章 工艺与表面处理: lessons/ch04.md
+      - 第 5 章 读懂工程图纸: lessons/ch05.md
+  - 第三篇 · 看见市场:
+      - 第 6 章 买家地图: lessons/l3-01.md
+      - 第 7 章 市场与证据: lessons/ch07.md
+  - 第四篇 · 找到客户:
+      - 第 8 章 获客渠道: lessons/ch08.md
+      - 第 9 章 询盘处理:
+          - 9.1 报价要素清单: lessons/l1-01.md
+          - 9.2 询盘英语十句: lessons/l5-01.md
+  - 第五篇 · 报价与成交:
+      - 第 10 章 成本与报价: lessons/ch10.md
+      - 第 11 章 条款与物流: lessons/ch11.md
+      - 第 12 章 谈判与下单: lessons/ch12.md
+  - 第六篇 · 交付与售后:
+      - 第 13 章 打样与量产: lessons/ch13.md
+      - 第 14 章 品质与验收: lessons/ch14.md
+      - 第 15 章 售后与复购: lessons/ch15.md
+  - 外贸英语分册:
+      - 场景 1 · 询盘与开发信: lessons/en01.md
+      - 场景 2 · 报价与议价: lessons/en02.md
+      - 场景 3 · 订单确认与生产跟进: lessons/en03.md
+      - 场景 4 · 品质争议与客诉: lessons/en04.md
+      - 场景 5 · 付款与催款: lessons/en05.md
+      - 场景 6 · 礼貌表达与关系维护: lessons/en06.md
+  - 附录:
+      - A 术语表: lessons/appendix-a.md
+      - B 邮件模板库: lessons/appendix-b.md
+      - C 图纸符号速查: lessons/appendix-c.md
+      - D 检查清单集: lessons/appendix-d.md
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true

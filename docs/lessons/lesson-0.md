@@ -61,15 +61,16 @@ CNC 加工外贸里，新手最容易翻车的地方出奇地一致：**薄壁�
 ## 一图看懂客诉处理走向
 
 ```mermaid
-flowchart TD
-    A["收到客诉：表面有刀纹"] --> B["先查两样：图纸 Ra 标注 + 签样"]
-    B --> C{"图纸上标了 Ra 吗？"}
-    C -->|"标了"| D{"实测达标吗？"}
-    D -->|"超差"| E["认：返工或重做"]
-    D -->|"达标"| F["出检测报告，澄清"]
-    C -->|"没标"| G["反问：密封面还是外观面？"]
-    G -->|"密封"| E
-    G -->|"外观"| H["协商：喷砂盖纹或让步接收"]
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#eef4fb","primaryTextColor":"#1c2430","primaryBorderColor":"#0b62d6","lineColor":"#0b62d6","fontSize":"14px"},"flowchart":{"curve":"basis","nodeSpacing":28,"rankSpacing":42}}}%%
+flowchart LR
+    A["收到客诉：底面刀纹"] --> B["查图纸 Ra ＋ 签样"]
+    B --> C{"标了 Ra？"}
+    C -->|"达标"| D["出报告澄清"]
+    C -->|"超差"| E["认：返工/重做"]
+    C -->|"没标"| F{"密封面还是外观？"}
+    F -->|"密封"| E
+    F -->|"外观"| G["协商：喷砂盖纹"]
+
 ```
 
 ## 术语卡 · 本课 16 词

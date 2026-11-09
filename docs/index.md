@@ -18,18 +18,20 @@
 一单生意从头到尾，三条线是这样并行的：
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#eef4fb","primaryTextColor":"#1c2430","primaryBorderColor":"#0b62d6","lineColor":"#0b62d6","fontSize":"14px"},"flowchart":{"curve":"basis","nodeSpacing":28,"rankSpacing":42}}}%%
 flowchart LR
     subgraph S1["📄 单据流"]
-        A1["询盘"] --> A2["报价单"] --> A3["PI＋定金条款"] --> A4["签样确认"] --> A5["检测报告"]
+        A1["询盘"] --> A2["报价单"] --> A3["PI＋定金"] --> A4["签样确认"] --> A5["检测报告"]
     end
     subgraph S2["💰 资金流"]
-        B1["客户定金 30%"] --> B2["工厂定金"] --> B3["客户尾款 70%"] --> B4["工厂尾款＋利润"]
+        B1["定金 30%"] --> B2["工厂定金"] --> B3["尾款 70%"] --> B4["利润沉淀"]
     end
     subgraph S3["🚚 货物流"]
         C1["坯料采购"] --> C2["CNC 加工"] --> C3["表面处理"] --> C4["检验包装"] --> C5["运输签收"]
     end
     A3 -.->|"定金触发"| C1
     A4 -.->|"签样放行"| C2
+
 ```
 
 ## 教科书目录
